@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saas Landing Page</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-6 col-sm-12 hero-text">
+                    <h1>Welcome to our SaaS platform</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor lectus nibh.</p>
+                    <a href="#signup" class="btn btn-primary">Sign Up Now</a>
+                </div>
+                <div class="col-md-5 col-sm-12">
+                    <img src="https://via.placeholder.com/400x300" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="features" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Our Features</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row feature-list">
+                <div class="col-md-4 col-sm-12">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Feature One</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor lectus nibh.</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Feature Two</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor lectus nibh.</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <i class="fas fa-check-circle"></i>
+                    <h4>Feature Three</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed porttitor lectus nibh.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Our Pricing Plans</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row pricing-table">
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Basic Plan</h3>
+                            <h2><sup>$</sup>9<sub>/mo</sub></h2>
+                            <ul>
+                                <li>Feature one</li>
+                                <li>Feature two</li>
+                                <li>Feature three</li>
+                            </ul>
+                            <a href="#signup" class="btn btn-outline-dark">Choose Plan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Pro Plan</h3>
+                            <h2><sup>$</sup>19<sub>/mo</sub></h2>
+                            <ul>
+                                <li>All features from Basic plan</li>
+                                <li>Additional feature four</li>
+                                <li>Additional feature five</li>
+                            </ul>
+                            <a href="#signup" class="btn btn-outline-dark">Choose Plan</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Enterprise Plan</h3>
+                            <h2><sup>$</sup>29<sub>/mo</sub></h2>
+                            <ul>
+                                <li>All features from Pro plan</li>
+                                <li>Additional feature six</li>
+                                <li>Additional feature seven</li>
+                            </ul>
+                            <a href="#signup" class="btn btn-outline-dark">Choose Plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Get In Touch With Us</h2>
+                    <hr>
+                </div>
+            </div>
+            <div class="row contact-form">
+                <div class="col-md-7 col-sm-12">
+                    <form action="#" method="post">
+                        <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Your Email Address">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="col-md-5 col-sm-12">
+
+
